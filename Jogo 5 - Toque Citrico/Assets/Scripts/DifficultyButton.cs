@@ -29,7 +29,7 @@ public class DifficultyButton : MonoBehaviour
         ColorBlock cores = button.colors;
         cores.normalColor = cor;
         cores.highlightedColor = Color.Lerp(cor, Color.white, 0.35f);
-        cores.pressedColor = cor * 0.72f;
+        cores.pressedColor = new Color(cor.r * 0.72f, cor.g * 0.72f, cor.b * 0.72f, 1f);
         cores.selectedColor = cores.highlightedColor;
         button.colors = cores;
     }
